@@ -4,8 +4,9 @@ var ctx = canvas.getContext('2d');
 var width = canvas.width;
 var height = canvas.height;
 
-var widthInBlocks = width / document.getElementById('canvasBlockSize').innerHTML;
-var heightInBlocks = height / document.getElementById('canvasBlockSize').innerHTML;
+var widthInBlocks = width / document.querySelector('canvasBlockSize').innerHTML;
+var heightInBlocks = height / document.querySelector('canvasBlockSize').innerHTML;
+document.querySelector('canvasBlockSize').innerHTML = '';
 
 function drawText(text, size, font, color, x, y, align, baseline)
 {
