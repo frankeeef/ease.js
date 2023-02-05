@@ -60,7 +60,7 @@ function int(str)
     parseInt(str);
 }
 
-function html(html, location)
+function html(html)
 {
-    document.querySelector(location).append(html)
+    document.write(html)
 }
